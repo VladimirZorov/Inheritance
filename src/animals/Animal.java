@@ -46,6 +46,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return String.format("%s %d %s", this.name, this.age, this.gender);
+        return String.format(this.getClass().getSimpleName()+"%n"
+                +"%s %d %s", this.name, this.age, this.gender);
     }
 }
